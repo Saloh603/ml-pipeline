@@ -13,5 +13,6 @@ This application allows users to update a machine learning pipeline with new dat
   - Pandas
   - Joblib
   - Scikit-learn
+
 """sh
 pip install -r requariments.txt"""
