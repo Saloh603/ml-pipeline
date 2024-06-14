@@ -127,7 +127,7 @@ __Response:__
     "detail": "Error message"
    }
 
-## Explanation of Predictions
+### Explanation of Predictions
 The prediction field in the response indicates the model's prediction regarding the "Personal Loan" status:
 
   1. __0__: The model predicts that the individual will not take a personal loan.
@@ -151,4 +151,7 @@ curl -X POST "http://localhost:8000/prediction" -H "Content-Type: application/js
   "CreditCard": 0
 }'
 ```
+
+## Conclusion
+This FastAPI application offers a straightforward way to manage a machine learning pipeline by allowing users to add new training data and make predictions using the updated model. By following the steps provided in the installation and setup section, you can easily run the application locally. The detailed API documentation ensures that you can interact with the endpoints effectively for adding new data and making predictions.
 
