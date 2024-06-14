@@ -15,5 +15,5 @@ This application allows users to update a machine learning pipeline with new dat
   - Scikit-learn
 
 <<engine='python', engine.path='python3'>>=
-!pip install -r requariments.txt
+#!pip install -r requariments.txt
 @
