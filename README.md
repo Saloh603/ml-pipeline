@@ -14,5 +14,6 @@ This application allows users to update a machine learning pipeline with new dat
   - Joblib
   - Scikit-learn
 
-"""sh
-pip install -r requariments.txt"""
+<<engine='python', engine.path='python3'>>=
+!pip install -r requariments.txt
+@
