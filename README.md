@@ -127,6 +127,12 @@ __Response:__
     "detail": "Error message"
    }
 
+## Explanation of Predictions
+The prediction field in the response indicates the model's prediction regarding the "Personal Loan" status:
+
+  1. __0__: The model predicts that the individual will not take a personal loan.
+  2. __1__: The model predicts that the individual will take a personal loan.
+
 ### Example:
 ```sh
 curl -X POST "http://localhost:8000/prediction" -H "Content-Type: application/json" -d '{
