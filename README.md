@@ -15,5 +15,20 @@ This application allows users to update a machine learning pipeline with new dat
   - Scikit-learn
 
 ```sh
-pip install requariments.txt
+pip install -r requirements.txt
 ```
+### Installation Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/ml-pipeline.git
+   cd ml-pipeline
+   ```
+2. Create and activate a virtual environment:
+   ```sh
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+   ```
+3. Run the application:
+   ```sh
+   python main.py
+   ```
