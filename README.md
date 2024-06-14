@@ -47,8 +47,8 @@ ml-pipeline/
 ```
 ## API Endpoints
 ### Add Data Endpoint
-__URL__: /add_data
+__URL__: _/add_data_
 
-Method: POST
+__Method__: POST
 
-Description: Upload a CSV file containing new training data to update the machine learning pipeline.
+__Description__: Upload a CSV file containing new training data to update the machine learning pipeline.
