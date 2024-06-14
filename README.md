@@ -76,6 +76,9 @@ __Response:__
    {
     "detail": "Error message"
    }
-  
-
+   ```
+### Example:
+```sh
+curl -X POST "http://localhost:8000/add_data" -F "file=@path/to/your/file.csv"
+```  
 
