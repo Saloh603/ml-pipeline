@@ -14,4 +14,7 @@ This application allows users to update a machine learning pipeline with new dat
   - Joblib
   - Scikit-learn
 
-python print("Hello, World!")
+```python
+# This is a Python code block
+print("Hello, World!")
+```
