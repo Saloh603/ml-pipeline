@@ -45,3 +45,10 @@ ml-pipeline/
 ├── pipeline/                # Directory where trained models are saved
 └── .venv/                   # Virtual environment directory
 ```
+## API Endpoints
+### Add Data Endpoint
+__URL__: /add_data
+
+Method: POST
+
+Description: Upload a CSV file containing new training data to update the machine learning pipeline.
