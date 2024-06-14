@@ -38,6 +38,9 @@ ml-pipeline/
 │
 ├── main.py
 ├── update_pipeline.py
+├── bank-loan-classification.ipynb
+├── README.md
+├── requirements.txt
 ├── prediction.py
 ├── pipeline/                # Directory where trained models are saved
 └── .venv/                   # Virtual environment directory
