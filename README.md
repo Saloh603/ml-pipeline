@@ -82,3 +82,67 @@ __Response:__
 curl -X POST "http://localhost:8000/add_data" -F "file=@path/to/your/file.csv"
 ```  
 
+## Prediction Endpoint
+__URL__: _/prediction_
+
+__Method__: POST
+
+__Description__: Make a prediction using the latest trained machine learning pipeline.
+
+__Request:__
+
+JSON body with the following fields:
+```json
+{
+  "ID": int,
+  "Age": int,
+  "Experience": int,
+  "Income": int,
+  "ZIPCode": int,
+  "Family": int,
+  "CCAvg": float,
+  "Education": int,
+  "Mortgage": int,
+  "SecuritiesAccount": int,
+  "CDAccount": int,
+  "Online": int,
+  "CreditCard": int
+}
+```
+__Response:__
+1. 200 OK
+   ```json
+   {
+    "prediction": int,
+    "pipeline_path": "pipeline/pipeline_20240613_131504.joblib"
+   }
+2. 404 Not found
+   ```json
+   {
+   "detail": "Pipeline not found. Train the model first."
+   }
+3. 500 Internal Server Error
+   ```json
+   {
+    "detail": "Error message"
+   }
+
+### Example:
+```sh
+curl -X POST "http://localhost:8000/prediction" -H "Content-Type: application/json" -d '{
+  "ID": 1,
+  "Age": 25,
+  "Experience": 2,
+  "Income": 50000,
+  "ZIPCode": 91107,
+  "Family": 4,
+  "CCAvg": 2.0,
+  "Education": 2,
+  "Mortgage": 0,
+  "SecuritiesAccount": 1,
+  "CDAccount": 0,
+  "Online": 1,
+  "CreditCard": 0
+}'
+```
+
