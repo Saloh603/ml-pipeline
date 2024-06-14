@@ -58,10 +58,24 @@ __Request:__
 file: A CSV file containing the training data. The CSV must include a "Personal Loan" column.
 
 __Response:__
-1. ```json 200 OK
+1. 200 OK
+   ```json 
    {
     "message": "Pipeline updated successfully",
     "pipeline_path": "pipeline/pipeline_20240613_131504.joblib"
    }
    ```
+2. 400 Bad Request:
+   ```json
+   {
+    "detail": "Personal Loan column is missing"
+   }
+   ```
+3. 500 Internal Server Error:
+   ```json
+   {
+    "detail": "Error message"
+   }
+  
+
 
