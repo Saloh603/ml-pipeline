@@ -3,9 +3,10 @@ from update_pipeline import app as add_data_app
 from prediction import app as prediction_app
 
 app = FastAPI()
-
-app.mount("/add_data", add_data_app)
-app.mount("/prediction", prediction_app)
+app.include_router(prediction_app)
+app.include_router(add_data_app)
+# app.mount("", add_data_app)
+# app.mount("", prediction_app)
 
 if __name__ == "__main__":
     import uvicorn

@@ -1,10 +1,10 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, APIRouter
 from pydantic import BaseModel
 import pandas as pd
 import joblib
 import os
 
-app = FastAPI()
+app = APIRouter()
 
 class DataItem(BaseModel):
     ID: int

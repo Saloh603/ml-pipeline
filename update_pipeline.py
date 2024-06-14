@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, UploadFile, File
+from fastapi import FastAPI, HTTPException, UploadFile, File, APIRouter
 import pandas as pd
 import joblib
 from sklearn.model_selection import train_test_split
@@ -10,7 +10,7 @@ import datetime
 from io import StringIO
 import os
 
-app = FastAPI()
+app = APIRouter()
 
 
 def update_pipeline(df, pipeline_directory="pipeline"):
