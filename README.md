@@ -52,3 +52,16 @@ __URL__: _/add_data_
 __Method__: POST
 
 __Description__: Upload a CSV file containing new training data to update the machine learning pipeline.
+
+__Request:__
+
+file: A CSV file containing the training data. The CSV must include a "Personal Loan" column.
+
+__Response:__
+1. ```json 200 OK
+   {
+    "message": "Pipeline updated successfully",
+    "pipeline_path": "pipeline/pipeline_20240613_131504.joblib"
+   }
+   ```
+
